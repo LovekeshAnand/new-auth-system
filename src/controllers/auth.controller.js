@@ -248,7 +248,6 @@ const verifyOtp = asyncHandler(async(req, res) => {
             message: "Authentication successful"
         }, "User authenticated successfully")
     )
-
 })
 
 // Resend OTP
