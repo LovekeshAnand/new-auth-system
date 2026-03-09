@@ -388,30 +388,6 @@ curl http://localhost:3000/api/v1/auth/me \
   -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
 
-## 🚀 Deployment
-
-### Environment Variables for Production
-```env
-NODE_ENV=production
-PORT=3000
-
-# Use strong, random secrets (minimum 32 characters)
-ACCESS_TOKEN_SECRET=<generate-with-openssl-rand-base64-32>
-REFRESH_TOKEN_SECRET=<generate-with-openssl-rand-base64-32>
-
-# Production database
-DATABASE_URL="postgresql://user:pass@host:5432/proddb"
-
-# Production SMTP (use service like SendGrid, AWS SES)
-SMTP_HOST=smtp.sendgrid.net
-SMTP_PORT=587
-SMTP_USER=apikey
-SMTP_PASS=<your-sendgrid-api-key>
-
-# Arcjet production key
-ARCJET_KEY=<your-production-arcjet-key>
-```
-
 ## 📝 License
 
 MIT License © 2025 Lovekesh Anand
